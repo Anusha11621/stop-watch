@@ -35,6 +35,7 @@ export default class Stopwatvh extends Component {
     }
     resumehandel = ()=>{
         this.setState({
+            stop:false,
             resume : !this.state.resume,
             timerstart : Date.now(),
         }) 
@@ -43,6 +44,7 @@ export default class Stopwatvh extends Component {
 
             return prevState
         })},10)
+
 
     }
     componentWillUnmount() {
